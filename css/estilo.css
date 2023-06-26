@@ -14,7 +14,7 @@
 
 /* html */
 html{
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One'
 
 }
 
@@ -56,14 +56,20 @@ html{
  header ul a{
     color: black;   
     text-decoration: none; 
+    font-size: 1.8rem;
+    font-weight: bold;
    }
  
 /* video */
   video{
    width: 50%;
-   box-shadow: 1px 73px 175px 103px rgba(39,236,16,0.88);
- -webkit-box-shadow: 1px 73px 175px 103px rgba(39,236,16,0.88);
- -moz-box-shadow: 1px 73px 175px 103px rgba(39,236,16,0.88);
+   box-shadow: -6px 8px 16px 6px rgba(101,232,78,0.75);
+  -webkit-box-shadow: -6px 8px 16px 6px rgba(101,232,78,0.75);
+  -moz-box-shadow: -6px 8px 16px 6px rgba(101,232,78,0.75);
+  border-radius: 30px 30px 30px 30px;
+ -webkit-border-radius: 30px 30px 30px 30px;
+ -moz-border-radius: 30px 30px 30px 30px;
+  border: 8px double #4ef037;
   }
 #video {
    text-align: center;
@@ -74,18 +80,19 @@ html{
 /* banner index */
 h1{
    text-decoration: underline;
-   text-shadow: 3px 3px 1px rgba(50,228,27,0.6);
-
+   text-shadow: 4px 4px 8px rgba(23,232,16,0.94);
+   
  }
  
  .banner{
     background-image: url(../imagenes/imgmario.jpeg);
     height: 250px ;
-    color: #0fc91a;
+    color:#000;
     background-size: contain;
     background-position: right ;
     background-repeat: no-repeat;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    padding: 20px 5px 5px 30px;
 
    }
 /* iconos */
@@ -112,6 +119,16 @@ h1{
  }
  
 /*  footer */
+
+footer{
+    background-color:#0fc91a ; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0; 
+}
 .mapa{
    padding: 10px;   
 }
@@ -126,7 +143,7 @@ footer{
 
 }
 footer img{
-   width: 20px;
+   width: 30px;
 }
 /* promociones */
 
@@ -204,8 +221,13 @@ footer img{
       flex-direction: column;
     }
     html{
-      font-size: 14px;
+      font-size: 12px;
     }
+    /*banner-letra*/
+    .banner{
+      text-shadow: 4px 4px 8px rgba(23,232,16,0.94);
+    }
+    
    /*banner-video*/
      video{
       width: 80%;
@@ -232,15 +254,16 @@ footer img{
       "titulo5"
       "imagen4";
       grid-template-columns: 95%;
-      grid-template-rows: 100px 150px 300px repeat(2, 80px) 300px repeat(2, 80px) 300px;
+      grid-template-rows: 100px 150px 320px repeat(2, 80px) 320px repeat(2, 80px) 300px;
    }
    .grid-imagen2{
       display: none;
    }
 
    /*footer*/
-  .mapa{
-   background-position: center;
+  footer{
+   flex-direction:row;
+   display:list-item;
   }
 }
 
