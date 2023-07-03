@@ -117,6 +117,17 @@ h1{
  .iconos div p{
    margin: 10px;
  }
+ /*contacto*/
+ .horario{
+   text-align: center;
+   margin: 20px;
+ }
+ .mapa{
+   padding: 20px;   
+}
+.mapa h3{
+   padding: 20px;
+}
  
 /*  footer */
 
@@ -130,12 +141,7 @@ footer{
     top: 0; 
     margin: 20px;
 }
-.mapa{
-   padding: 10px;   
-}
-.mapa h3{
-   padding: 10px;
-}
+
 footer h4{
    text-align: center;
 }
