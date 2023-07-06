@@ -19,11 +19,35 @@ html{
 }
 
 /* header */
- 
- header {
-    background-color:#0fc91a ; 
-    display: flex; 
-    flex-direction: row-reverse;
+
+header img{
+   width: 200px;
+   margin-top: 5px;  
+   margin-right: 5px; 
+   margin-bottom: 5px;
+}
+.estilonav{
+   background-color:#0fc91a ;  
+}
+.menu{
+    color: black;     
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.menu:hover{
+   color: black;
+   text-decoration:underline;
+} 
+.container-fluid{
+   flex-direction: row-reverse;  
+}
+.navbar-nav{
+   width: 100%;
+   justify-content: space-around;
+}
+ /* header {
+     
+    display: flex;     
     justify-content: space-evenly;
     align-items: center;
     position: sticky;
@@ -43,22 +67,13 @@ html{
    
   }
 
- header img{
-    width: 200px;
-    margin-top: 5px;  
-    margin-right: 5px; 
-    margin-bottom: 5px;
-    
- }
+ 
  .verde{
   background-color: #0fc91a;
  }
  header ul a{
-    color: black;   
-    text-decoration: none; 
-    font-size: 1.8rem;
-    font-weight: bold;
-   }
+    
+   } */
  
 /* video */
   video{
@@ -117,7 +132,11 @@ h1{
  .iconos div p{
    margin: 10px;
  }
- /*contacto*/
+
+ /*carrusel-------------------*/
+
+
+ /*contacto--------------------*/
  .horario{
    text-align: center;
    margin: 20px;
@@ -228,6 +247,9 @@ footer img{
     header{
       flex-direction: column;
     }
+    header img{
+      width: 120px;
+    }
     html{
       font-size: 12px;
     }
@@ -271,7 +293,7 @@ footer img{
    /*footer*/
   footer{
    flex-direction:row;
-   display:list-item;
+   display: grid;
 
   }
 }
