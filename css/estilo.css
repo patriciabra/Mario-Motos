@@ -21,10 +21,8 @@ html{
 /* header */
 
 header img{
-   width: 200px;
-   margin-top: 5px;  
-   margin-right: 5px; 
-   margin-bottom: 5px;
+   width: 180px;  
+   margin-right: 5px;  
 }
 .estilonav{
    background-color:#0fc91a ;  
