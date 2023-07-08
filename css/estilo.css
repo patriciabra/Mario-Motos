@@ -61,7 +61,7 @@ header img{
 #video {
    text-align: center;
    padding: 40px;
-  
+   margin-top: 20px;
    }
 
 /* banner index */
@@ -80,7 +80,7 @@ h1{
     background-repeat: no-repeat;
     font-size: 2.4rem;
     padding: 20px 5px 5px 30px;
-
+    margin: 20px;  
    }
 /* iconos */
  .iconos img{
@@ -215,12 +215,20 @@ footer img{
    font-size: 2rem;
 }
 
-/*servicios con bootstrap*/
+/*index con bootstrap*/
+
+
+/* carrusel automatico */
+.carousel{
+ padding: 2%;
+}
 
 /*nuestras marcas carrusel*/
+.marcas{
+   margin: 6%;
+}
 
-
-/* para celular */
+/* para celular ---------------------------------------------------------------- */
 
 @media only screen and (max-width:500px) {
    
