@@ -19,7 +19,10 @@ html{
 }
 
 /* header */
-
+header{
+   position: sticky;
+   top: 0px;
+}
 header img{
    width: 180px;  
    margin-right: 5px;
@@ -106,15 +109,24 @@ h1{
 
 
  /*contacto--------------------*/
- .horario{
-   text-align: center;
-   margin: 20px;
- }
- .mapa{
-   padding: 20px;   
+
+form{
+   padding-left: 5%;
 }
-.mapa h3{
+.horario{
    padding: 20px;
+}
+.horario p{
+   font-size: 1.5rem;
+}
+ .mapa{
+   padding: 4%;
+   display: flex; 
+   justify-content: center;
+   align-items:flex-end;  
+}
+ .mapa h3{
+  padding: 5%;
 }
  
 /*  footer */
@@ -259,6 +271,10 @@ footer img{
       display: none;
    }
 
+   /* contacto */
+   .card{
+      padding: 10%;
+   }
    /*footer*/
   footer{
    flex-direction:row;
