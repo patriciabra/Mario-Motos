@@ -293,7 +293,8 @@ footer img{
    margin-right: 10%;
   }
   .mapa h3{
-   align-items: end;
+   align-items: center;
+   font-size: small;
   }
 }
 
