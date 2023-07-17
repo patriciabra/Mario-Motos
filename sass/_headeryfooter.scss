@@ -1,0 +1,50 @@
+header{
+  position: sticky;
+  top: 0px;
+  .estilonav{
+    background-color:#0fc91a ;  
+   }
+  .container-fluid{
+    flex-direction: row-reverse; 
+    img{
+      width: 180px;  
+      margin-right: 5px;
+   } 
+  }
+  .navbar-nav{
+    width: 100%;
+    justify-content: space-around;
+  .menu{
+      color: black;     
+      font-size: 1.6rem;
+      font-weight: bold;
+  }
+  :hover{
+    color: black;
+    text-decoration:underline;
+ } 
+ }
+}
+
+footer {
+  background-color: $color-footer-bg;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  margin: 20px;
+
+  h4 {
+    text-align: center;
+  }
+
+  color: $color-footer-text;
+
+  img {
+    width: 25px;
+  }
+}
+
+ 

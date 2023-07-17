@@ -1,0 +1,59 @@
+.grid img{
+    width: 100%;
+    height: 100%;
+ }
+ .grid{
+    display: grid;
+    grid-template-areas: 
+    " promo       promo      promo"
+    " titulo1     imagen1    imagen1"
+    " imagen2     titulo2    imagen3"
+    " imagen2     titulo3    imagen3"
+    " titulo4     imagen4    titulo5"
+    " titulo4     imagen4    titulo5";
+    grid-template-columns: repeat(3, 26%);
+    grid-template-rows: 200px 600px 250px 250px 300px 150px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 2px;
+    p{
+      text-align: center;
+   }
+   &-promo{
+      grid-area: promo;  
+      font-size: 4rem;      
+   }
+   &-titulo1{
+      grid-area: titulo1;
+      font-size: 2rem;
+   }
+   &-imagen1{
+      grid-area: imagen1;
+   }
+   &-titulo2{
+      grid-area: titulo2;
+      font-size: 3rem;   
+   }
+   &-imagen2{
+      grid-area: imagen2;
+   }
+   &-imagen3{
+      grid-area: imagen3;
+   }
+   &-titulo3{
+      grid-area: titulo3;
+      font-size: 2rem;
+   }
+   &-titulo4{
+      grid-area: titulo4;  
+      font-size: 3rem;
+   }
+   &-imagen4{
+      grid-area: imagen4;
+   }
+   &-titulo5{
+      grid-area: titulo5;
+      font-size: 2rem;
+   }
+}

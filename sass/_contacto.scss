@@ -1,0 +1,21 @@
+.horario{
+    padding: 20px;
+    p{
+      font-size: 1.8rem;
+     }
+ }
+form{
+  padding-left: 5%;
+  :focus{
+    border: double rgba(23,232,16,0.94) 8px;    
+  }
+  }
+.mapa{
+  padding: 4%;
+  display: flex; 
+  justify-content: center;
+  align-items:flex-start;
+  h3{
+    padding: 5%;
+  } 
+} 

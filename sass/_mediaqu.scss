@@ -1,0 +1,71 @@
+@media only screen and (max-width:500px) {
+   
+    /* header */
+     header{
+       flex-direction: column;
+       img{
+        width: 120px;
+      }
+     } 
+     html{
+       font-size: 12px;
+     }
+     /*banner-letra*/
+     .banner{
+       text-shadow: 4px 4px 8px rgba(23,232,16,0.94);
+      p{
+        margin: 2px;
+        padding: 2px;
+      } 
+     }
+     
+    /*banner-video*/
+      video{
+       width: 80%;
+      }
+    /*iconos*/
+      .iconos {
+       flex-direction: row;
+       display: contents;
+     }
+ 
+    /* promociones*/
+    .grid-promo{
+       font-size: 2rem;
+    }
+    .grid{
+       grid-template-areas: 
+       "promo"
+       "titulo1"
+       "imagen1"
+       "titulo2"
+       "titulo3"
+       "imagen3"
+       "titulo4"
+       "titulo5"
+       "imagen4";
+       grid-template-columns: 95%;
+       grid-template-rows: 100px 150px 320px repeat(2, 80px) 320px repeat(2, 80px) 300px;
+    }
+    .grid-imagen2{
+       display: none;
+    }
+ 
+    /* contacto */
+    .card{
+       padding: 10%;
+    }
+    /*footer*/
+   footer{
+    flex-direction:row;
+    display: grid;
+   }
+   .mapa{
+    padding: 10% 10%;
+    margin-right: 10%;
+   }
+   .mapa h3{
+    align-items: center;
+    font-size: small;
+   }
+ }
