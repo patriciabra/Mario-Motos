@@ -1,27 +1,112 @@
+@media only screen and (max-width:768px) {
+  
+  /* header */
+  header{
+    flex-direction: row;
+    .navbar-brand img {
+     max-width: 80%;
+    }
+   }
+   html{
+    font-size: 75%;
+  }
+  /*banner-letra*/
+  .banner{
+    text-shadow: 4px 4px 8px rgba(23,232,16,0.94);
+    box-shadow: black;
+   p{
+     margin: 3.5%;
+     padding: 3.5%;
+   } 
+  } 
+  /*banner-video*/
+  video{
+    width: 80%;
+   }
+  
+    /* promociones*/
+    .grid-promo{
+      font-size: 300%;
+     }
+    .grid{
+      grid-template-areas: 
+      "promo"
+      "titulo1"
+      "imagen1"
+      "titulo2"
+      "titulo3"
+      "imagen3"
+      "titulo4"
+      "titulo5"
+      "imagen4";
+      grid-template-columns: 70%;
+      grid-template-rows: 100px 150px 320px repeat(2, 80px) 320px repeat(2, 80px) 300px;
+     }
+    .grid-imagen2{
+      display: none;
+     } 
+
+    /* contacto */
+    .card{
+      padding: 2%;
+     } 
+   /*footer*/
+   footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    h4{
+      display: none;
+     }
+    p{
+      font-size: 100%;
+     }
+    img{
+      width: 4%;
+     }
+    }
+    form{
+      font-size: 130%;
+     input{
+      width: 15%;
+      font-size: 90%;    
+      } 
+     }
+     .mapa{
+      padding: 8% 8%;
+      margin-right: 8%;
+     }
+     .mapa h3{
+      align-items: center;
+      font-size:medium;
+     } 
+ }
+
+
 @media only screen and (max-width:500px) {
    
     /* header */
      header{
        flex-direction: column;
-       img{
-        width: 120px;
+       .navbar-brand img {
+        max-width: 100%;
+       }
       }
-     } 
      html{
-       font-size: 12px;
+       font-size: 70%;
      }
      /*banner-letra*/
      .banner{
        text-shadow: 4px 4px 8px rgba(23,232,16,0.94);
       p{
-        margin: 2px;
-        padding: 2px;
+        margin: 2%;
+        padding: 2%;
       } 
      }
      
     /*banner-video*/
       video{
-       width: 80%;
+       width: 95%;
       }
     /*iconos*/
       .iconos {
@@ -57,8 +142,27 @@
     }
     /*footer*/
    footer{
-    flex-direction:row;
-    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    h4{
+      display: none;
+    }
+    p{
+      font-size: 94%;
+    }
+    img{
+      width: 4.5%;
+     }
+   }
+   //form comentarios
+  
+  form{
+    font-size: 100%;
+   input{
+    width: 10%;
+    font-size: 80%;    
+    } 
    }
    .mapa{
     padding: 10% 10%;
@@ -69,3 +173,4 @@
     font-size: small;
    }
  }
+ 

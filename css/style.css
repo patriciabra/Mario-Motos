@@ -10,12 +10,12 @@ html {
 
 .banner {
   background-image: url(../imagenes/imgmario.jpeg);
-  height: 250px;
+  height: 210%;
   color: #000;
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  font-size: 2.4rem;
+  font-size: 200%;
   padding: 20px 5px 5px 30px;
   margin: 40px;
 }
@@ -28,8 +28,8 @@ html {
   animation-delay: 2s;
 }
 .banner p {
-  margin: 30px;
-  padding: 10px;
+  margin: 2%;
+  padding: 1%;
 }
 
 @keyframes mario {
@@ -88,14 +88,23 @@ video {
 }
 
 .horario {
-  padding: 20px;
+  padding: 5%;
 }
 .horario p {
-  font-size: 1.8rem;
+  font-size: 140%;
 }
 
 form {
-  padding-left: 5%;
+  padding: 5%;
+  text-align: center;
+  font-size: 130%;
+  text-decoration: underline;
+  font-weight: bold;
+}
+form input {
+  width: 10%;
+  font-size: 120%;
+  font-weight: bolder;
 }
 form :focus {
   border: double rgba(23, 232, 16, 0.94) 8px;
@@ -114,6 +123,7 @@ form :focus {
 header {
   position: sticky;
   top: 0px;
+  z-index: 10;
 }
 header .estilonav {
   background-color: #0fc91a;
@@ -131,7 +141,7 @@ header .navbar-nav {
 }
 header .navbar-nav .menu {
   color: black;
-  font-size: 1.6rem;
+  font-size: 160%;
   font-weight: bold;
 }
 header .navbar-nav :hover {
@@ -145,16 +155,15 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  position: sticky;
-  top: 0;
-  margin: 20px;
+  padding: 1%;
+  margin: 2% 0% 0% 0%;
   color: #000;
+}
+footer img {
+  width: 3%;
 }
 footer h4 {
   text-align: center;
-}
-footer img {
-  width: 25px;
 }
 
 .carousel {
@@ -216,28 +225,99 @@ footer img {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  /* header */
+  header {
+    flex-direction: row;
+  }
+  header .navbar-brand img {
+    max-width: 80%;
+  }
+  html {
+    font-size: 75%;
+  }
+  /*banner-letra*/
+  .banner {
+    text-shadow: 4px 4px 8px rgba(23, 232, 16, 0.94);
+    box-shadow: black;
+  }
+  .banner p {
+    margin: 3.5%;
+    padding: 3.5%;
+  }
+  /*banner-video*/
+  video {
+    width: 80%;
+  }
+  /* promociones*/
+  .grid-promo {
+    font-size: 300%;
+  }
+  .grid {
+    grid-template-areas: "promo" "titulo1" "imagen1" "titulo2" "titulo3" "imagen3" "titulo4" "titulo5" "imagen4";
+    grid-template-columns: 70%;
+    grid-template-rows: 100px 150px 320px repeat(2, 80px) 320px repeat(2, 80px) 300px;
+  }
+  .grid-imagen2 {
+    display: none;
+  }
+  /* contacto */
+  .card {
+    padding: 2%;
+  }
+  /*footer*/
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  footer h4 {
+    display: none;
+  }
+  footer p {
+    font-size: 100%;
+  }
+  footer img {
+    width: 4%;
+  }
+  form {
+    font-size: 130%;
+  }
+  form input {
+    width: 15%;
+    font-size: 90%;
+  }
+  .mapa {
+    padding: 8% 8%;
+    margin-right: 8%;
+  }
+  .mapa h3 {
+    align-items: center;
+    font-size: medium;
+  }
+}
 @media only screen and (max-width: 500px) {
   /* header */
   header {
     flex-direction: column;
   }
-  header img {
-    width: 120px;
+  header .navbar-brand img {
+    max-width: 100%;
   }
   html {
-    font-size: 12px;
+    font-size: 70%;
   }
   /*banner-letra*/
   .banner {
     text-shadow: 4px 4px 8px rgba(23, 232, 16, 0.94);
   }
   .banner p {
-    margin: 2px;
-    padding: 2px;
+    margin: 2%;
+    padding: 2%;
   }
   /*banner-video*/
   video {
-    width: 80%;
+    width: 95%;
   }
   /*iconos*/
   .iconos {
@@ -262,8 +342,25 @@ footer img {
   }
   /*footer*/
   footer {
-    flex-direction: row;
-    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  footer h4 {
+    display: none;
+  }
+  footer p {
+    font-size: 94%;
+  }
+  footer img {
+    width: 4.5%;
+  }
+  form {
+    font-size: 100%;
+  }
+  form input {
+    width: 10%;
+    font-size: 80%;
   }
   .mapa {
     padding: 10% 10%;
